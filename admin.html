@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>about_us</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <style>
+        .sticky {
+            position: fixed;
+            top: 0;
+
+            width: 100%;
+        }
+
+        input[type=text], input[type=password]{
+            width:20%;
+            padding:7px 10px;
+            margin: 8px 0;
+            display:inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button{
+            background-color:#0080FF;
+            width: 10%;
+            padding: 9px 5px;
+            margin:5px 0;
+            cursor:pointer;
+            border:none;
+            color:#ffffff;
+        }
+        button:hover{
+            opacity:0.8;
+        }
+        #un,#ps{
+            font-family:'Lato', sans-serif;
+            color: gray;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<nav class="header" id="myHeader">
+    <ul class="menu">
+        <li class="logo"><a href=" "><img src="image/selise-logo.png" height="60" width="150" alt="selise_image"></a></li>
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="information.html">Information</a></li>
+        <li class="item"><a href="how_to_apply.html">How to apply</a></li>
+        <li class="item"><a href="admin.html">Administrator</a></li>
+        <li class="item"><a href="contact.html">Contact</a></li>
+        <li class="item button "><a href="login.html">Login</a></li>
+        <li class="item button secondary"><a href="register.html">Register</a></li>
+        <li class="toggle"><span class="bars"></span> </li>
+    </ul>
+</nav>
+
+<script type="text/javascript">
+    window.onscroll = function() {myFunction()};
+
+    const header = document.getElementById("myHeader");
+    const sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+
+    $(function(){
+        $(".toggle").on("click", function(){
+            if($(".item").hasClass("active")){
+                $(".item").removeClass("active");
+            }
+
+            else{
+                $(".item").addClass("active");
+            }
+        })
+    })
+
+    $(window).on('scroll', function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('header');
+        }
+        else {
+            $('nav').removeClass('header');
+        }
+    })
+</script>
+<script>
+    // Get the modal
+    const modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+
+<section class="about_section">
+    <div class="about_container">
+        <div class="row_row">
+            <div class="column_column">
+                <div class="about_sub">
+                    <div class="about-text">
+                        <p><b>Administrator can:</b></p>
+                        <ul class="about_list">
+                            <li>Monitor Employment Officers activities</li>
+                            <li>Access reports</li>
+                            <li>Register Employment Offices</li>
+                            <li>Add Questions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="column_column">
+                <body>
+                    <div id="container">
+                        <form action="login" method="post" id="flogin">
+
+                            <h3>Administrator Login</h3>
+                            <div class="form">
+
+                            <label for="uname" id="un">Username:</label>
+                            <input type="text" name="user" placeholder="Enter Username" id="uname"><br/><br/>
+
+                            <label for="upass" id="ps">Password:</label>
+                            <input type="password" name="pass" placeholder="Enter Password" id="upass"><br/><br/>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                <a href="admin_dashboard.html"><button type="submit" value="Login"><a href="admin_dashboard.html" style="color: white">Login</a></button></a>
+
+                            <!-- Note:-use "&amp;nbsp"(use in html) or "margin"(left/right in css in head tag) to adjust the space) -->
+
+                            <a href="register.html">New Member?</a>
+                            </div>
+                        </form>
+                    </div>
+                </body>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<footer class="footer">
+    <div class="l-footer">
+        <h1><img src="image/selise-logo.png" height="60" width="150"/></h1>
+        <p>Our genuine understanding of your business goals is a key building block of our services. We develop digital platform strategies, calculate business cases and come up with generic
+            expansion plans for a number of customers every year.</p>
+    </div>
+
+    <ul class="r-footer">
+        <li>
+            <h2>Explore</h2>
+            <ul class="box">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="how_to_apply.html">How to apply</a></li>
+                <li><a href="admin.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </li>
+        <li class="feature">
+            <h2>Need Help?</h2>
+            <ul class="box h-box">
+                <li><a href=" ">Blog</a></li>
+                <li><a href=" ">Information</a></li>
+                <li><a href="">How to apply</a></li>
+                <li><a href=" ">Contact</a></li>
+
+            </ul>
+        </li>
+        <li>
+            <h2>Legal</h2>
+            <ul class="box">
+                <li><a href=" ">Privacy Policy</a></li>
+                <li><a href=" ">Terms of use</a></li>
+                <li><a href=" ">Contract</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="b-footer">
+        <p>All Right Reserved &copy;Selise 2020</p>
+    </div>
+</footer>
+</body>
+</html>

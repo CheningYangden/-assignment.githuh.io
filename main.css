@@ -1,0 +1,129 @@
+img {
+  max-width: 100%;
+  height: auto; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("image/bg.jpg");
+  background-size: cover;
+  font-family: sans-serif;
+  display: flex; }
+
+.loginBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  min-height: 200px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 40px; }
+
+h3 {
+  margin: 0;
+  padding: 0 0 20px;
+  color: #0080FF;
+  text-align: center; }
+
+.user {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px; }
+
+.loginBox input {
+  width: 100%;
+  margin-bottom: 8px; }
+
+.loginBox input[type="text"],
+.loginBox input[type="password"] {
+  border: none;
+  border-bottom: 2px solid #262626;
+  outline: none;
+  height: 40px;
+  color: #262626;
+  background: transparent;
+  font-size: 16px;
+  padding-left: 20px;
+  box-sizing: border-box; }
+
+.loginBox input[type="text"]:focus,
+.loginBox input[type="password"]:focus {
+  border-bottom: 2px solid #0080FF; }
+
+.inputBox {
+  position: relative; }
+
+.loginBox .login {
+  margin-right: 30px; }
+
+.inputBox span {
+  position: relative;
+  bottom: 40px;
+  color: #262626; }
+
+.loginBox input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+  background: #0080FF;
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer; }
+
+.loginBox a {
+  color: #262626;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none; }
+
+ul li {
+  color: white; }
+
+.loginBox li {
+  list-style: none; }
+
+.loginBox ul li {
+  background: #0080FF;
+  text-align: center;
+  border: none;
+  outline: none;
+  height: 30px;
+  font-size: 16px;
+  background: #0080FF;
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  padding-top: 10px; }
+
+.loginBox .social-links .links-box {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  padding-left: 75px; }
+
+.loginBox .social-links .links-box a {
+  position: center;
+  margin-left: 6px; }
+
+.social-links p {
+  text-align: center; }
+
+.links-box img {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px; }
+
+.links-box img:hover {
+  box-shadow: 0px 0px 10px grey; }
+
+.loginBox ul li:hover {
+  background-color: #58CCED; }
+
+a:hover {
+  color: grey; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>homepage</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <style>
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<nav class="header" id="myHeader">
+    <ul class="menu">
+        <li class="logo"><a href="index.html"><img src="image/selise-logo.png" height="60" width="150" alt="selise_image"></a></li>
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="information.html">Information</a></li>
+        <li class="item"><a href="how_to_apply.html">How to apply</a></li>
+        <li class="item"><a href="admin.html">Administrator</a></li>
+        <li class="item"><a href="contact.html">Contact</a></li>
+        <li class="item button "><a href="login.html">Login</a></li>
+        <li class="item button secondary"><a href="register.html">Register</a></li>
+        <li class="toggle"><span class="bars"></span> </li>
+    </ul>
+</nav>
+
+<script type="text/javascript">
+    window.onscroll = function() {myFunction()};
+
+    const header = document.getElementById("myHeader");
+    const sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+
+    $(function(){
+        $(".toggle").on("click", function(){
+            if($(".item").hasClass("active")){
+                $(".item").removeClass("active");
+            }
+
+            else{
+                $(".item").addClass("active");
+            }
+        })
+    })
+
+    $(window).on('scroll', function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('header');
+        }
+        else {
+            $('nav').removeClass('header');
+        }
+    })
+</script>
+
+<section class="section_one">
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <p style="font-size:70px"><b>Your Dream</b> Job is Waiting</p>
+                <span>Welcome to our online Recruitment page. Recruiting candidates is easier than ever with selise.
+                    This is a special recruitment program for engineers who are willing to learn and grow within the SELISE environment.
+                    Our cloud-based recruitment is made for you. Start now!</span>
+            </div>
+
+            <div class="column">
+               <img src="image/selise.JPG" height="306" width="100%"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section_two">
+    <div class="container">
+        <div class="content_heading1">
+            <span>Categories work waiting for you</span>
+            <h2>Current <b>Job Posts</b></h2>
+        </div>
+    </div>
+    <div class="row2-container">
+            <div class="column2">
+                <ul>
+                    <li><a href="">Web Development <span class="number" data-number="1000">1</span></a></li>
+                    <li><a href="">Graphic Designer <span class="number" data-number="1000">3</span></a></li>
+                    <li><a href="">Multimedia <span class="number" data-number="1000">2</span></a></li>
+                    <li><a href="">Advertising <span class="number" data-number="1000">1</span></a></li>
+                </ul>
+            </div>
+            <div class="column2">
+                <ul>
+                    <li><a href="">PHP Programming <span class="number" data-number="1000">4</span></a></li>
+                    <li><a href="">Project Management <span class="number" data-number="1000">3</span></a></li>
+                    <li><a href="">Office & Admin <span class="number" data-number="1000">2</span></a></li>
+                    <li><a href="">Back end Developer <span class="number" data-number="1000">1</span></a></li>
+                </ul>
+            </div>
+            <div class="column2">
+                <ul>
+                    <li><a href="">Web Designer <span class="number" data-number="1000">1</span></a></li>
+                    <li><a href="">Software Designer <span class="number" data-number="1000">2</span></a></li>
+                    <li><a href="">Web Designer <span class="number" data-number="1000">2</span></a></li>
+                    <li><a href="">Software Designer <span class="number" data-number="1000">1</span></a></li>
+                </ul>
+            </div>
+
+
+    </div>
+
+</section>
+
+<section>
+    <div class="container">
+        <div class="content_heading">
+            <span>Our recently added jobs</span>
+            <h2>Recent<b>Job</b></h2>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="sub-container2">Frontend Developer
+            <div class="recent_job"><li class="item button "><a href="login.html" style="font-size: 16px">Apply Now</a></li></div>
+        </div>
+        <div class="sub-container2">Full Stack Developer
+            <div class="recent_job"><li class="item button "><a href="login.html" style="font-size: 16px">Apply Now</a></li></div>
+        </div>
+        <div class="sub-container2">Frontend Developer
+            <div class="recent_job"><li class="item button"><a href="login.html" style="font-size: 16px">Apply Now</a></li></div>
+        </div>
+        <div class="sub-container2">Backend Developer
+            <div class="recent_job"><li class="item button "><a href="login.html" style="font-size: 16px">Apply Now</a></li></div>
+        </div>
+        <div class="sub-container2">Open source Interactive Developer
+            <div class="recent_job"><li class="item button "><a href="login.html" style="font-size: 16px">Apply Now</a></li></div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<footer class="footer">
+    <div class="l-footer">
+        <h1><img src="image/selise-logo.png" height="60" width="150"/></h1>
+        <p>Our genuine understanding of your business goals is a key building block of our services. We develop digital platform strategies, calculate business cases and come up with generic
+            expansion plans for a number of customers every year.</p>
+    </div>
+
+    <ul class="r-footer">
+        <li>
+            <h2>Explore</h2>
+            <ul class="box">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="how_to_apply.html">How to apply</a></li>
+                <li><a href="admin.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </li>
+        <li class="feature">
+            <h2>Need Help?</h2>
+            <ul class="box h-box">
+                <li><a href=" ">Blog</a></li>
+                <li><a href=" ">Information</a></li>
+                <li><a href="">How to apply</a></li>
+                <li><a href=" ">Contact</a></li>
+
+            </ul>
+        </li>
+        <li>
+            <h2>Legal</h2>
+            <ul class="box">
+                <li><a href=" ">Privacy Policy</a></li>
+                <li><a href=" ">Terms of use</a></li>
+                <li><a href=" ">Contract</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="b-footer">
+        <p>All Right Reserved &copy;Selise 2020</p>
+    </div>
+</footer>
+</body>
+</html>
